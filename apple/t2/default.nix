@@ -50,10 +50,12 @@ let
 in
 {
   options = {
-    hardware.apple-t2.enableAppleSetOsLoader = lib.mkOption {
-      default = false;
-      type = lib.types.bool;
-      description = "Whether to enable the appleSetOsLoader activation script.";
+    hardware.apple-t2 = {
+      enableAppleSetOsLoader = lib.mkOption {
+        default = false;
+        type = lib.types.bool;
+        description = "Whether to enable the appleSetOsLoader activation script.";
+      };
     };
   };
 
@@ -92,6 +94,9 @@ in
 
     # Make sure post-resume.service exists
     powerManagement.enable = true;
+
+    # For wifi and bluetooth firmware.
+    hardware.firmware = [ (pkgs.callPackage ./pkgs/firmware.nix { }) ];
 
     # Activation script to install apple-set-os-loader in order to unlock the iGPU
     system.activationScripts.appleSetOsLoader = lib.optionalString t2Cfg.enableAppleSetOsLoader ''
