@@ -1,13 +1,17 @@
 {
-  "base_url": "https://raw.githubusercontent.com/t2linux/linux-t2-patches/3c35556ed0a06018ae074b7176d031409c41123c/",
+  "base_url": "https://raw.githubusercontent.com/t2linux/linux-t2-patches/9f538c646581ad805d9b4ff8690803306e3899db/",
   "patches": [
     {
       "name": "1001-Add-t2bce-driver-stack.patch",
-      "hash": "sha256-+3/tyG7mdg+L6rpRVU7PqZjtdcLyS4GG0iBtq9yClu8="
+      "hash": "sha256-AtpVVbrg9oGy0rFChlrL6SIN4gPAKxYeq/Ykr+Z5jQw="
     },
     {
       "name": "1002-Integrate-t2bce-driver-stack.patch",
-      "hash": "sha256-a5WHFSXhFhKsxGI7NBjjPfKzjCD4XxtOkg9k+tgNZr8="
+      "hash": "sha256-mSPoqMuBV7JnQ3OWYcuT1e5U3+SByccmqKwCL5UawYo="
+    },
+    {
+      "name": "1003-Fix-for-6.18.patch",
+      "hash": "sha256-ozJkJFm11oGDW1Gwrp4AR4Ifv9X8Yix6uF9ZBFJ76+M="
     },
     {
       "name": "2008-i915-4-lane-quirk-for-mbp15-1.patch",
@@ -19,7 +23,7 @@
     },
     {
       "name": "3001-applesmc-convert-static-structures-to-drvdata.patch",
-      "hash": "sha256-7KGC0pCos351wKNhwJI/Qoc7w+orOPpiTkdCN50G8nI="
+      "hash": "sha256-c/d+c5eKzhbtfUKtLC7AB+6vMXge4ZzPJAUbNENWH7g="
     },
     {
       "name": "3002-applesmc-make-io-port-base-addr-dynamic.patch",
@@ -79,7 +83,7 @@
     },
     {
       "name": "8001-Add-APFS-driver.patch",
-      "hash": "sha256-7yzAlrN5x4AG4C2xdnGOJ7dVips5BhvOQ99vZm4hajI="
+      "hash": "sha256-fL9TftzTd5PurxIDrzaPsysGExrMySGOsm6H8NFd7JY="
     },
     {
       "name": "8002-Necessary-modifications-to-build-APFS-with-the-kerne.patch",
